@@ -2,8 +2,11 @@
 <html>
   <head>
     <title>Greeting</title>
+    <% yield -%>
   </head>
   <body>
+    <% yield -%>
+     
     <p>Welcome to Faqly!</p>
     <p> The easiest way to make beautiful FAQs for your service</p>
     <p> <%= link_to "Make your FAQ now!", '/users/registration/sign_up' %></p>

@@ -1,6 +1,9 @@
 Faqly::Application.routes.draw do
 
   
+
+  resources :faqs
+
   devise_for :users
 
   root :to => "home#index"

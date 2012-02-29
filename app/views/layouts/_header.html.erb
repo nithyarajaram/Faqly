@@ -1,0 +1,13 @@
+<header>
+  <nav class="round">
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+      <% if user_signed_in? %>
+      <li><%= link_to "Sign out", 'users/sign_out' %></li>
+      <% else %>
+      <li><%= link_to "Sign in", 'users/sign_in' %></li>
+      <% end %>
+    </ul>
+  </nav>
+</header>
+
