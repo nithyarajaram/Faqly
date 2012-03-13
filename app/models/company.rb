@@ -1,5 +1,5 @@
 class Company < ActiveRecord::Base
 
-  has_many :users :dependednt => :destroy
+  has_many :users :dependent => :destroy
 
 end
