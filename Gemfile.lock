@@ -34,6 +34,10 @@ GEM
       warden (~> 0.10.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    formtastic (1.2.4)
+      actionpack (>= 2.3.7)
+      activesupport (>= 2.3.7)
+      i18n (~> 0.4)
     i18n (0.5.0)
     mail (2.2.19)
       activesupport (>= 2.3.6)
@@ -75,5 +79,6 @@ PLATFORMS
 
 DEPENDENCIES
   devise (= 1.1.rc0)
+  formtastic
   rails (= 3.0.7)
   sqlite3

@@ -1,17 +1,23 @@
+
+<div class="container">
 <h2>Sign up</h2>
-
-<%= form_for(resource_name, resource, :url => registration_path(resource_name)) do |f| %>
-  <%= f.error_messages %>
-  <p><%= f.label :email %></p>
-  <p><%= f.text_field :email %></p>
-
-  <p><%= f.label :password %></p>
-  <p><%= f.password_field :password %></p>
-
-  <p><%= f.label :password_confirmation %></p>
-  <p><%= f.password_field :password_confirmation %></p>
-
-  <p><%= f.submit "Sign up" %></p>
+<%= semantic_form_for(resource_name, resource, :url => registration_path(resource_name),:html => {:class => "form-stacked"}) do |f| %>
+  <%= f.inputs do %>
+  <%= f.input :email %>
+  <%= f.input :password %>
+  <%= f.input :password_confirmation %>
 <% end %>
-
+   <%= f.buttons do %>
+     <%= f.commit_button :label => "Sign Up" %>
+   <% end %>
+<% end %>
 <%= render :partial => "devise/shared/links" %>
+</div>
+
+
+
+
+
+
+
+

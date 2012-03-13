@@ -1,13 +1,15 @@
 <header>
-  <nav class="round">
-    <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <% if user_signed_in? %>
-      <li><%= link_to "Sign out", 'users/sign_out' %></li>
-      <% else %>
-      <li><%= link_to "Sign in", 'users/sign_in' %></li>
-      <% end %>
-    </ul>
-  </nav>
+  <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Faqly</a>
+          <ul class="nav">
+            <li class="active"><a href="/users/registration/sign_up">Sign-Up!</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 </header>
 
