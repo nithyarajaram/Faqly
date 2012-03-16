@@ -2,7 +2,8 @@ class FaqsController < ApplicationController
   # GET /faqs
   # GET /faqs.xml
   def index
-    @faqs = Faq.all
+    @company = Company.find(params[:id])
+    @faqs = @company.Faq.all
 
     respond_to do |format|
       format.html # index.html.erb
